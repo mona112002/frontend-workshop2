@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300&display=swap");
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --hotmag: #ff17e4;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --magenta: #e310cb;
+  font-size: 1.3rem =16 px 100%;
+  --mono: "oxygen mono", monospace;
+  --sans: oxygen, sans-serif;
+}
+/* https://bugsbountyhunter.github.io/modern-cv/index.html */
+/* generic styles for the page */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--aqua);
+  background-color: #171321;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  color: var(--hotmag);
+}
+a: hover {
+  color: var(--hotmag);
+}
+img {
+  width: 100%;
+}
+#intro {
+  padding: 4rem 1rem 10rem;
+  padding-bottom: 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#intro.name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua)
+    display: block;
+
+}
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+nav h1{
+    font-family: var(--sans);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+nav [class*="fa-"]{
+ font-size: 150%;
+ color: var(--aqua);   
+}
+nav h1 [class*="fa-"]{
+    font-size: 100%;
+    text-decoration: none;
+    display: block;
+}
+nav a:hover,
+    nav [class*="fa-"]:hover{
+    color: var(--magenta);
+
+}
+.button{
+    background-color: var(--magenta);
+    color:aliceblue;
+    padding: .5;
+    border-radius: 5px;
+}
+.button:hover{
+    color: #f7f8fa;
+    background-color: var(--hotmag);
+}
+@media (min-width: 850px){
+    nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
